@@ -73,4 +73,100 @@ header {
 h2{
     font-size: 16px;
 }
- 
+h3{
+   font-size: 28px;
+   
+}
+
+
+.flexbox-lists {
+
+   display: flex;
+   gap: 20px;
+   
+}
+
+
+.flexbox-lists>div {
+   flex: 1 1 calc(33.33% - 20px);
+   padding: 10px;
+   border-radius: 4px;
+   background-color: #fbf5eb;
+   box-shadow: 0 15px 6px rgba(0, 0, 0, 0.1);
+   box-shadow: 0 15px 6px rgba(0, 0, 0, 0.1);
+   transition: transform 0.3s ease-in-out; /* Adding a transition for transform property */
+
+}
+
+.flexbox-lists>div:hover {
+   transform: translateY(-5px); /* Applying a translateY transformation on hover */
+}
+
+.flexbox-lists h4 {
+   font-size: 20px;
+   margin-bottom: 10px;
+   color: black;
+   text-align: center;
+   text-decoration: solid;
+}
+
+
+.flexbox-lists p {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;
+   color: #764640;
+}
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+   .flexbox-lists {
+      display: block;
+   }
+
+   .flexbox-lists>div {
+      width: 100%;
+      margin-bottom: 20px;
+   }
+}
+
+/* END OF CSS CARDS */
+
+.background-section {
+   background-color: #764640;
+   padding: 50px 0; /* Adjust top and bottom padding as needed */
+   text-align: center;
+}
+
+.background-section h3{
+   color: white;
+}
+
+.card {
+   background-color: #fbf5eb;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+   padding: 20px;
+   max-width: 600px;
+   margin: 10px auto; /* Center the card horizontally */
+   display: flex;
+   
+}
+
+.card h2 {
+   font-size: 24px;
+   margin-bottom: 10px; /* Add spacing between heading and paragraph */
+}
+
+.card p {
+   font-size: 16px;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 600px) {
+   .background-section {
+       padding: 30px 10px; /* Adjust padding for smaller screens */
+   }
+
+   .card {
+       max-width: 100%; /* Set max-width to 100% for smaller screens */
+   }
+}
